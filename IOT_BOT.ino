@@ -14,19 +14,19 @@
 
 
 // Replace with your network credentials
-const char* ssid = "SLT-4G_B53FA";
-const char* password = "2251151aasr";
+const char* ssid = "SSID";
+const char* password = "PASSWORD";
 
-const char* googleApiKey = "AIza5yDBPopc4WAFxkfi3QMIruDAgoCshAvDxA"; //"AIzaSyBDBc_FBEzE5hxDII0uArF7W7p3e71-aVU";
+const char* googleApiKey = "KEY";
 WifiLocation location (googleApiKey);
 
 // Initialize Telegram BOT
-#define BOTtoken "5005872462:AAExixA8saSldif-hMOEaXAXTOsU8i4KCN0"  // your Bot Token (Get from Botfather)
+#define BOTtoken "BOT_TOKEN"  // your Bot Token (Get from Botfather)
 
 // Use @myidbot to find out the chat ID of an individual or a group
 // Also note that you need to click "start" on a bot before it can
 // message you
-#define CHAT_ID "779385493"            //group id - "-686857845"
+#define CHAT_ID "CHAT_ID"            //group id - "-686857845"
 
 #ifdef ESP8266
   X509List cert(TELEGRAM_CERTIFICATE_ROOT);
