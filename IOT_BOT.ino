@@ -17,7 +17,7 @@
 const char* ssid = "SLT-4G_B53FA";
 const char* password = "2251151aasr";
 
-const char* googleApiKey = "AIzaSyBDBc_FBEzE5hxDII0uArF7W7p3e71-aVU";
+const char* googleApiKey = "AIza5yDBPopc4WAFxkfi3QMIruDAgoCshAvDxA"; //"AIzaSyBDBc_FBEzE5hxDII0uArF7W7p3e71-aVU";
 WifiLocation location (googleApiKey);
 
 // Initialize Telegram BOT
@@ -55,7 +55,7 @@ String getReadings(){
   float temperature = dht.readTemperature();
   float humidity = dht.readHumidity();
   
-  String message = "Current readings from the sensors : ";
+  String message = "Current readings from the sensors : \n";
   message += "Temperature : " + String(temperature) + " C \n";
   message += "Humidity : " + String(humidity) + " % \n";
   Serial.println(message);
